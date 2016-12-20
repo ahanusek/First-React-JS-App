@@ -4,7 +4,7 @@ body {
   color: #333;
   font-family: Lato, sans-serif;
 }
-.container {
+#container {
   display: block;
   width: 400px;
   margin: 100px auto 0;
@@ -29,9 +29,10 @@ button {
   color: #888;
   font-size: 15px;
   width: 60px;
-  margin: 10px 0 0;
+  margin: 7px 0 0;
   font-family: Lato, sans-serif;
   cursor: pointer;
+  float: right;
 }
 button:hover {
   color: #333;
@@ -72,7 +73,7 @@ input#new-task {
   float: left;
   width: 318px;
 }
-p > button:hover {
+form > button:hover {
   color: #0FC57C;
 }
 
@@ -104,17 +105,4 @@ li > .delete:hover {
 #completed-tasks label {
   text-decoration: line-through;
   color: #888;
-}
-
-/* Edit Task */
-ul li input[type=text] {
-  display:none;
-}
-
-ul li.editMode input[type=text] {
-  display:block;
-}
-
-ul li.editMode label {
-  display:none;
 }
